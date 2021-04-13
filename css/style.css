@@ -1,5 +1,5 @@
 /*Обнуление*/
- *{
+* {
   padding: 0;
   margin: 0;
   border: 0;
@@ -88,11 +88,10 @@ a {
   padding: 0 10px;
   margin: 0 auto;
 }
-.section-page{
+.section-page {
   padding: 100px 0;
-
 }
-.title{
+.title {
   text-align: center;
   margin-bottom: 100px;
   font-size: 36px;
@@ -107,23 +106,30 @@ a {
   height: 100vh;
   text-align: center;
   position: relative;
- }
+}
 .header::after {
- content: "";
- position: absolute;
- height: 70px;
- bottom: 0;
- left: 0;
- width: 100%;
- background: linear-gradient(180deg, #0e0e0e 0%, rgba(17,17,17,0.850295) 16.53%, rgba(32,32,32,0) 100%);
+  content: '';
+  position: absolute;
+  height: 70px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    #0e0e0e 0%,
+    rgba(17, 17, 17, 0.850295) 16.53%,
+    rgba(32, 32, 32, 0) 100%
+  );
   transform: rotate(180deg);
- }
-.menu { }
+}
+.menu {
+  position: relative;
+  padding: 50px 0 58px;
+  background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32, 31, 33, 0) 86.33%);
+}
 .menu__list {
   display: flex;
   justify-content: center;
-  padding: 50px 0 58px;
-  background: linear-gradient(180deg, #111213 0%, #111213 43.62%, rgba(32,31,33,0) 86.33%);
 }
 .menu__list-item {
   padding: 0 13px;
@@ -131,20 +137,22 @@ a {
 .menu__list-link {
   font-size: 36px;
   line-height: 42px;
- }
-.menu__list-link:hover {
- color: #85ccdc;
- text-decoration: underline;
- }
+}
+.menu__list-link:hover,
+.menu__list-link--active {
+  color: #85ccdc;
+  text-decoration: underline;
+}
 .logo {
   padding: 178px;
- }
-.logo__img { }
+}
+.logo__img {
+}
 
-
-
-.about { }
-.title { }
+.about {
+}
+.title {
+}
 .about__inner {
   display: flex;
   justify-content: space-between;
@@ -155,24 +163,23 @@ a {
   flex: none;
 }
 .about__info-item {
- margin-bottom: 25px;
- color: #e5e5e5;
- }
-.about__info-item span{
-  display: block;
- }
-.about__text p{
   margin-bottom: 25px;
- }
+  color: #e5e5e5;
+}
+.about__info-item span {
+  display: block;
+}
+.about__text p {
+  margin-bottom: 25px;
+}
 
-
- .video {
-   background-image: url(/images/video-bg.jpg);
-   height: 100vh;
-   background-position: center center;
-   background-repeat: no-repeat;
-   text-align: right;
-  }
+.video {
+  background-image: url(/images/video-bg.jpg);
+  height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  text-align: right;
+}
 
 .video__text {
   font-style: italic;
@@ -183,7 +190,7 @@ a {
   padding-top: 444px;
   margin-bottom: 40px;
 }
-.video__text span{
+.video__text span {
   display: block;
   padding-right: 285px;
 }
@@ -192,27 +199,29 @@ a {
   position: relative;
   margin-right: 230px;
 }
-.video__btn::before{
-  content: "";
+.video__btn::before {
+  content: '';
   position: absolute;
   width: 100px;
   height: 100px;
   top: -40px;
   left: 0;
   background-image: url(/images/icon/youtube-btn.svg);
-
 }
 
+.seasons {
+}
+.section-page {
+}
 
-.seasons { }
-.section-page { }
-
-.title { }
+.title {
+}
 .seasons__inner {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 100px 75px;
   counter-reset: number;
+  padding-top: 50px;
 }
 .seasons__item {
   width: 350px;
@@ -225,19 +234,19 @@ a {
   justify-content: center;
   align-items: center;
   position: relative;
- }
+}
 
-.seasons__item:hover .seasons__link{
+.seasons__item:hover .seasons__link {
   opacity: 1;
 }
-.seasons__item:hover::after{
+.seasons__item:hover::after {
   content: '';
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: rgba(14,14,14, 0.8);
+  background-color: rgba(14, 14, 14, 0.8);
 }
 .seasons__item::before {
   content: '0' counter(number);
@@ -246,29 +255,116 @@ a {
   font-weight: bold;
   font-size: 96px;
   line-height: 112px;
-  color:#600e09;
+  color: #600e09;
   left: 0;
   top: -77px;
   z-index: -1;
- }
+}
 .seasons__link {
   font-size: 36px;
   line-height: 42px;
   padding: 12px 78px 11px;
   background-color: #0e0e0e;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 2;
- }
+}
 
+.heroes {
+}
+.section-page {
+}
 
+.heroes__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.heroes__slider-img {
+  max-width: 775px;
+}
+.heroes__images {
+}
+.heroes__slider-text {
+  max-width: 350px;
+}
+.heroes__text p {
+  margin-bottom: 15px;
+}
+.heroes__name {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 84px;
+  margin-bottom: 44px;
+  color: #85ccdc;
+}
 
-.heroes { }
-.section-page { }
+.slick-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  z-index: 5;
+  cursor: pointer;
+}
+.slick-prev {
+  left: 38px;
+}
+.slick-next {
+  right: 38px;
+}
 
-.heroes__inner { }
-.heroes__slider-img { }
-.heroes__images { }
-.heroes__slider-text { }
-.heroes__text { }
-.heroes__name { }
+.footer {
+}
+.copy {
+  padding: 14px 0 15px;
+  text-align: center;
+}
+
+/* css season-1 */
+
+.page-header {
+  background-image: url(/images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 90vh;
+  position: relative;
+}
+
+.menu__container {
+  max-width: 1385px;
+  margin: 0 auto;
+  position: relative;
+}
+.page-logo {
+  position: absolute;
+}
+
+.season-info {
+  display: flex;
+  position: absolute;
+  width: 1385px;
+  padding: 44px 47px 64px 35px;
+  background: #0e0e0e;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.season-info__num {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 56px;
+  text-align: center;
+  margin-right: 51px;
+}
+.season-info__num span {
+  display: block;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+.pseason-info__text p {
+  margin-bottom: 15px;
+}
