@@ -1,222 +1,190 @@
-/* @media(max-width:1140px) {
-    .services__item:hover{
-        width: 450px; 
-    }
+@media (max-width: 1420px) {
+  .page-logo {
+    left: 10px;
+    top: -6px;
+  }
 }
-@media(max-width:1024px) {
-   .header__images{
-    width: 80%;
-   }
-   .services {
-    padding-top: 250px;
-}
-.services__inner{
-    flex-wrap: wrap;
-    width: 100%;
-}
-.services__list{
-    order: -1;
-    margin-bottom: 30px;
-    width: 100%;
-}
-.services__item{
-    width: 100%;
-}
-.services__item:hover{
-    width: 100%;
-}
-.services__content{
-    width: 100%;
-    margin-right: 0;
-}
-.benefits__images{
-    display: none;
-}
-
-}
-@media(max-width:900px) {
-   .header__images{
-    width: 80%;
-    }
-   .phone {
+@media (max-width: 1366px) {
+  .logo__img {
+    width: 60%;
+  }
+  .menu__list-link {
     font-size: 24px;
+    line-height: 32px;
+  }
+  .about__info {
+    width: 250px;
+  }
+  .page-header {
+    height: 120vh;
+  }
+}
+@media (max-width: 1200px) {
+  .heroes__inner {
+    display: block;
+  }
+  .heroes__slider-text {
+    padding-top: 50px;
+    max-width: 100%;
+  }
+  .heroes__slider-img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1088px) {
+  .seasons__item {
+    height: 340px;
+  }
+}
+@media (max-width: 992px) {
+  .page-logo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__inner {
+    display: block;
+  }
+  .section-page {
+    padding: 50px 0;
+  }
+  .title {
+    margin-bottom: 50px;
+    font-size: 28px;
     line-height: 36px;
-    }
-    .header__title {
-        font-size: 54px;
-        line-height: 74px;  
-    }
-    .header__subtitle {
-        font-size: 24px;
-        line-height: 36px;
-        margin-bottom: 20px;
-    }
-    .header__info {
-    padding: 30px 0 20px 50px;
-    }
-    .contact__inner{
-        display: block;
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .contact__input{
-        width: 100%;
-    }
-    .contact__btn{
-        margin-bottom: 20px;
-    }
-    .contact__title {
-        margin-left: 0;
-        text-align: center;
-        
-    }
-    .contact__inner{
-        margin-bottom: 0;
-    }
+  }
+  .video__text {
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .video__text span {
+    padding-right: 200px;
+  }
+  .video__btn {
+    margin-right: 0;
+    padding-left: 62px;
+  }
+  .video__btn::before {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    top: -16px;
+  }
+  .seasons__inner {
+    grid-gap: 80px 35px;
+  }
+  .heroes__name {
+    font-size: 46px;
+    line-height: 56px;
+    margin-bottom: 25px;
+  }
+  /* .slick-btn{
+     display: none!important;
+  } */
+  .season-info {
+    display: block;
+    padding: 30px 10px 0 10px;
+  }
+  .season-info__num {
+    text-align: left;
+    font-size: 50px;
+    line-height: 26px;
+    margin-bottom: 15px;
+  }
+  .season-info__num span {
+    font-size: 25px;
+    line-height: 32px;
+  }
 }
 
-@media(max-width:768px) {
-    .benefits__inner,
-    .title{
-        text-align: center;
-        margin-left: 0;
-    }
-    .benefits__list{
-        padding: 25px 15px;
-    }
-    .benefits__item{
-        width: 100%;
-      
-    }
+@media (max-width: 640px) {
+  .page-header {
+    height: 160vh;
+  }
+  .menu {
+    padding: 0;
+    background: linear-gradient(180deg, #111213 0%, #111213 10%, rgba(32, 31, 33, 0) 86.33%);
+    text-align: center;
+  }
+  body {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .menu__list {
+    display: block;
+    transform: translateY(-130%);
+    transition: all 0.3s;
+  }
+  .menu__list.menu__list--active {
+    transform: translateY(0%);
+    padding: 100px 0 50px;
+    background-color: #0e0e0e;
+    opacity: 0.8;
+  }
+  .menu__list-link {
+    display: block;
+    padding: 10px 0;
+  }
+  .logo {
+    padding-top: 21vh;
+  }
+  .page-logo {
+    display: block;
+    top: 22px;
+    z-index: 10;
+  }
+  .menu__btn {
+    display: block;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 10;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+
+  .menu__btn span {
+    background-color: #fff;
+    height: 5px;
+    width: 100%;
+  }
+
+  .menu__btn::after,
+  .menu__btn::before {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .menu__btn::before {
+    top: 0;
+    left: 0;
+  }
+
+  .menu__btn::after {
+    bottom: 0;
+    left: 0;
+  }
 }
 
-@media(max-width:600px) {
-    .header__content{
-        padding-top: 0;
-        text-align: center;
-    }
-    .header__info {
-        padding: 30px 0 20px 0px;
-        }
-    .info {
-        justify-content: center;
-        
-    }
-    .header__images{
-        display: none;
-    }
-    .services{
-        padding-top: 50px;
-    }
-    .title{
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 10px;
-        padding-bottom: 30px;
-        text-align: center;
-    }
-    body{
-        font-size: 16px;
-        line-height: 22px;
-    }
-    .services__item::before{
-        left: 11px;
-        top: 5px;
-    }
-    .services__item{
-        padding: 10px 15px 10px 60px;
-    }
-    .services__content{
-        text-align: center;
-    }
-    .title::after{
-        display: none;
-    }
-    .services__inner,
-    .benefits,
-    .carousel {
-        margin-bottom: 50px;
-    }
-
-    .carousel .slick-dots button{
-        width: 10px;
-    }
- 
-    .benefits__item-num{
-        font-size: 28px;
-        line-height: 36px;
-    }
-    
+@media (max-width: 414px) {
+  .seasons__item {
+    height: 203px;
+  }
 }
-
-
-
-@media(max-width:600px) {
-    .footer__inner{
-        flex-wrap: wrap;
-        justify-content: center;
-        height: auto;
-        padding: 20px 0;
-        text-align: center;
-    }
-    .footer__info{
-        width: 100%;
-        justify-content: center;
-        margin: 25px 0;
-
-    }
+@media (max-width: 360px) {
+  .page-header {
+    height: 224vh;
+  }
 }
-
-
-@media(max-width:600px) {
-    .slick-slide img {
-        
-        width: 100%;
-    }
-    .contact__form {
-        padding: 50px 12px 37px;
-    }
+@media (max-width: 340px) {
 }
-
-
-@media(max-width:520px) {
-    .header__top{
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .logo{
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    .header__title{
-        margin-bottom: 20px;
-    }
-    .button--decor::before{
-        right: -50px;
-    }
-    .button--decor::after{
-       margin-left: 110px;
-    }
-    
-}
-@media(max-width:360px) {
-  
-    .button--decor::before,
-    .button--decor::after{
-      display: none;
-    }
-}
-@media(max-width:340px) {
-    .header__top{
-        padding: 15px 0 15px;
-    }
-    .header__title{
-       font-size: 44px;
-       line-height: 50px;
-    }
-    .header{
-        min-height: 600px;
-    }
-} */
